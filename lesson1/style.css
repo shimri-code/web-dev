@@ -1,0 +1,26 @@
+/* css element */
+/* button{
+  background-color: aqua;  
+} */
+
+/* css class */
+/* .btn-cal{
+    background-color: yellow;
+} */
+
+/* css id */
+/* #btn-id{
+    background-color: yellowgreen;
+} */
+
+.btn-calculator{
+ width: 100px;   
+ height: 100px;
+ font-size: 30px;
+ margin: 5px;
+ background-color: rgb(40, 48, 41);
+ color: white;
+ cursor: pointer;
+ box-shadow: 1px 1px 5px 1px red;
+ border-radius: 50%;
+}

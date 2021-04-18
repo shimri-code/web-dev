@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lesson 1</title>
+</head>
+<body>
+    <div>
+        <!-- Inlline Style -->
+        <!-- <button style="cursor: pointer;color: blue; background-color: cornsilk;">1</button>
+        <button style="cursor: pointer;">2</button>
+        <button style="cursor: pointer;">3</button> -->
+
+        <button class="btn-calculator">1</button>
+        <button class="btn-calculator">2</button>
+        <button class="btn-calculator">3</button>
+        <button class="btn-calculator">4</button>
+
+    </div>
+    <script>
+
+        // // Old way
+        // function clicked () {
+        //     console.log("clicked");
+        // }
+
+        // const clicked = () => {
+        //     console.log('clicked');
+        // }
+
+
+        // Select the first 
+        // var btn = document.querySelector('.btn-calculator');
+        // Select all
+        let btns = document.querySelectorAll('.btn-calculator');
+        console.log(btns);
+
+        for (let index = 0; index < btns.length; index++) {
+            const element = btns[index];
+            console.log(element);
+
+            element.addEventListener("click", (e) => {
+                console.log(e.target.textContent);
+            });
+        }
+
+        console.log(btns);
+
+    </script>
+</body>
+</html>
