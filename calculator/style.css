@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cal-back
+{
+    width: 40%;
+    height: 70%;
+    background-color: rgba(15, 15, 15, 0.822);
+    border-radius: 2%;
+
+    /* Center  */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cal-front{
+    background-color: rgb(39, 39, 39);
+
+    height: 95%;
+    margin-left: 20px;
+    margin-right: 3px;
+    margin-top: 4%;
+}
+
+.cal-screen{
+    /* background-color: gray; */
+    background-color: rgba(15, 15, 15, 0.555);
+
+    height: 25%;
+
+    display: flex;
+
+}
+
+.cal-panel
+{
+    margin-top: 10px;
+    display: flex;
+    height: 40vh;
+}
+
+.panel-numbers{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+}
+
+.screen{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    height: 80%;
+    border-radius: 5%;
+
+    display: flex;
+}
+
+.result{
+    margin: auto;
+    font-size: 34px;
+}
+
+.actions{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+
+.row{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    height: 20%;
+}
+
+.btn-result{
+    width: 90%;
+    margin: auto;
+
+    height: 50px;
+    background-color: rgb(234, 214, 253);
+    opacity: 0.8;
+    font-size: 22px;
+    box-shadow: -1px 1px 0px 1px white;
+
+}
+
+.btn{
+    flex: 1;
+    margin: 0px 5px;
+
+    font-size: 34px;
+
+    background-color: rgb(234, 214, 253);
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20%;
+
+    box-shadow: -2px 2px 0px 1px white;
+}
+
+.btn-action{
+    height: 15%;
+    margin-top: 10px;
+    background-color: rgb(234, 214, 253);
+    opacity: 0.8;
+    border-radius: 10%;
+    box-shadow: -1px 1px 0px 1px white;
+    cursor: pointer;
+    font-size: 24px;
+
+}
