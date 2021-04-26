@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Best Calculator</title>
+</head>
+<body>
+    <h1>The Best Calculator Ever</h1>
+    <div class="calc-panel">
+
+        <button class="btn-calc-num" id="num1">1</button>
+        <button class="btn-calc-num" id="num2">2</button>
+        <button class="btn-calc-num" id="num3">3</button>
+        <button class="btn-calc-oper" id="oper/">/</button>
+        <br>
+        <button class="btn-calc-num" id="num4">4</button>
+        <button class="btn-calc-num" id="num5">5</button>
+        <button class="btn-calc-num" id="num6">6</button>
+        <button class="btn-calc-oper" id="oper*">*</button>
+        <br>
+        <button class="btn-calc-num" id="num7">7</button>
+        <button class="btn-calc-num" id="num8">8</button>
+        <button class="btn-calc-num" id="num9">9</button>
+        <button class="btn-calc-oper" id="oper-">-</button>
+        <br>
+        <button class="btn-calc-num" id="num0">0</button>
+        <button  id="dot">.</button>
+        <button class="btn-calc-oper" id="oper=">=</button>
+        <button class="btn-calc-oper" id="oper+">+</button>
+        
+    </div>
+    <script>
+        var sum=0;//this is the sum of the number buttons that the user pressed on
+        for(let i=0;i<10;i++){//with this loop we will add numerical values to the compatible numerical buttons
+            document.getElementById('num'+i).value=i;
+          //console.log('The value of button '+i+' is:    '+document.getElementById('num'+i).value);
+        }
+        let nums_btns=document.querySelectorAll('.btn-calc-num');
+       //console.log(nums_btns);
+        for(let i=0;i<nums_btns.length;i++){
+            nums_btns[i].addEventListener("click", (e) =>{
+                sum+=+nums_btns[i].value;
+                console.log('total sum '+sum);
+            });
+        }
+    </script>
+</body>
+</html>
