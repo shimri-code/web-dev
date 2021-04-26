@@ -5,7 +5,7 @@ let screen = document.querySelector(".screen");
 
 let btns = document.querySelectorAll(".btn-calc-num");
 
-btns.forEach((btn, index) => {
+btns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     sum += +e.target.textContent;
     console.log(`total sum ${sum}`);
