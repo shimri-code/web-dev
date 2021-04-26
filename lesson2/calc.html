@@ -9,6 +9,9 @@
 </head>
 <body>
     <h1>The Best Calculator Ever</h1>
+    <div class="screen">
+
+    </div>
     <div class="calc-panel">
 
         <button class="btn-calc-num" id="num1">1</button>
@@ -30,22 +33,10 @@
         <button  id="dot">.</button>
         <button class="btn-calc-oper" id="oper=">=</button>
         <button class="btn-calc-oper" id="oper+">+</button>
+
+     
         
     </div>
-    <script>
-        var sum=0;//this is the sum of the number buttons that the user pressed on
-        for(let i=0;i<10;i++){//with this loop we will add numerical values to the compatible numerical buttons
-            document.getElementById('num'+i).value=i;
-          //console.log('The value of button '+i+' is:    '+document.getElementById('num'+i).value);
-        }
-        let nums_btns=document.querySelectorAll('.btn-calc-num');
-       //console.log(nums_btns);
-        for(let i=0;i<nums_btns.length;i++){
-            nums_btns[i].addEventListener("click", (e) =>{
-                sum+=+nums_btns[i].value;
-                console.log('total sum '+sum);
-            });
-        }
-    </script>
+    <script src="./calc.js"></script>
 </body>
 </html>
