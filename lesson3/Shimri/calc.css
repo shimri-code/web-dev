@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:#091921;
+    
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#091921), to(#1a011a)) fixed; */
+}
+
+.screen{
+    font-size: 30px;
+    background: transparent;
+    color: white;
+   
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 100%;
+
+    border-top:1px solid rgba(255, 255, 255, 0.5);
+    border-bottom:1px solid rgba(255, 255, 255, 0.5);
+    height: 100px;
+
+    overflow: hidden;
+}
+
+.calc::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+
+    background: linear-gradient(#e91e63, #ffc107);
+    clip-path: circle(22% at 30% 20%);
+}
+
+
+.calc::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+
+    background: linear-gradient(#fff, #da00ff);
+    clip-path: circle(22% at 70% 90%);
+}
+
+.calc-panel
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+
+     /* make the glass effect */
+     backdrop-filter: blur(15px);
+
+    background:rgba(255, 255, 255, 0.02); 
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.5); 
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.btn::before{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);;
+    border-left: 1px solid #ffffff0d;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    width: 74px;
+    height: 74px;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+
+    /* border-bottom: 0.1px solid rgba(255, 255, 255, 0.02);; */
+    /* border-right: 1px solid #ffffff0d; */
+}
+.btn:hover {
+    background:rgba(255, 255, 255, 0.04); 
+}
+
+.btn.cls
+{
+    width: 50%;
+    order: 1;
+}
+
+.btn.cls:hover{
+    background:rgba(0, 17, 5, 0.63); 
+
+}
+
+
+.oper0{
+    order:2;
+}
+
+.oper1{
+    order:3;
+}
+
+.num7{
+    order:4;
+}
+
+.num8{
+    order:5;
+}
+
+.num9{
+    order:6;
+}
+
+.oper2{
+    order:7;
+}
+
+.num4{
+    order:8;
+}
+
+.num5{
+    order:9;
+}
+
+.num6{
+    order:10;
+}
+
+.oper3{
+    order:11;
+}
+
+.num1{
+    order:12;
+}
+
+.num2{
+    order:13;
+}
+
+.num3{
+    order:14;
+}
+
+.num0{
+    order:15;
+}
+
+
+.btn.result
+{
+    /* background-color: rgb(0, 48, 32); */
+    width: 75%;
+    order:16;
+}
+
+.btn.dot{
+    order:17;
+}
+
+
+

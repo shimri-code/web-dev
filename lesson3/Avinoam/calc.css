@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    color: rgb(21, 91, 197);
+}
+.screen{
+    text-align: center;
+}
+.calc-panel{
+    text-align: center;
+}
+.btn-calc-oper{
+    background-color:yellow;
+}
+#dot{
+    background-color:greenyellow;
+}
