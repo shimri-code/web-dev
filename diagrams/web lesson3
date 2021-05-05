@@ -1,22 +1,22 @@
-<mxfile host="app.diagrams.net" modified="2021-05-05T12:21:09.441Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="sOD4dNURRl4EzgObPAjS" version="14.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-05T12:21:23.100Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="y_vgNmQ4HEc9t6tl2rCu" version="14.6.1" type="github">
   <diagram id="tFocSXuUjiPrwdrTANjS" name="Page-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="YSe5JmPFNm3ADmWLK5Ag-5" value="Properties" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=17;" vertex="1" collapsed="1" parent="1">
-          <mxGeometry x="70" y="120" width="120" height="30" as="geometry">
-            <mxRectangle x="70" y="120" width="140" height="104" as="alternateBounds" />
+        <mxCell id="YSe5JmPFNm3ADmWLK5Ag-5" value="Properties" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="70" y="120" width="140" height="104" as="geometry">
+            <mxRectangle x="70" y="120" width="120" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="YSe5JmPFNm3ADmWLK5Ag-6" value="border" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=15;fontStyle=1" vertex="1" parent="YSe5JmPFNm3ADmWLK5Ag-5">
-          <mxGeometry y="26" width="120" height="26" as="geometry" />
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
         </mxCell>
         <mxCell id="YSe5JmPFNm3ADmWLK5Ag-7" value="margin" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=15;fontStyle=1" vertex="1" parent="YSe5JmPFNm3ADmWLK5Ag-5">
-          <mxGeometry y="52" width="120" height="26" as="geometry" />
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
         </mxCell>
         <mxCell id="YSe5JmPFNm3ADmWLK5Ag-8" value="padding" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=15;fontStyle=1" vertex="1" parent="YSe5JmPFNm3ADmWLK5Ag-5">
-          <mxGeometry y="78" width="120" height="26" as="geometry" />
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
         </mxCell>
         <mxCell id="YSe5JmPFNm3ADmWLK5Ag-9" value="CSS" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=51;" vertex="1" parent="1">
           <mxGeometry x="334" y="5" width="120" height="70" as="geometry" />
