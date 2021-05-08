@@ -1,12 +1,88 @@
-*{
+ /* TO all elements */
+ /* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.calc-test{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    background: chocolate;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.panel-test{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn{
+    width: 74px;
+    height: 74px;
+    font-size: 1.1rem;
+}
+
+.screen-test{
+    height: 100px;
+    background: transparent;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.btn.clear{
+    flex-basis: 75%;
+}
+
+.btn.clear:hover{
+    background: rgba(4, 255, 37, 0.6);
+}
+
+.btn.result:hover{
+    background: rgba(199, 2, 101, 0.6);
+}
+ 
+.btn.result{
+    flex-basis: 50%;
+} */
+
+
+.calc-test{
+    display: flex;
+    flex-direction: column;
+
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.05);
+    border-top:1px solid  rgba(255, 255, 255, 0.05);
+    border-left:1px solid  rgba(255, 255, 255, 0.05);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2),
+    5px 5px 30px rgba(0,0,0,0.4);
+
+    z-index: 100;
+
+    /* width: 300px; */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 body{
-    /* background-color: rgb(0, 0, 0); */
     background-color: rgb(24, 3, 3);
+    /* background-color: white; */
 }
 
 body::after{
@@ -36,7 +112,7 @@ body::before{
 
 }
 
-.calc-test{
+.calc{
     display: flex;
     flex-direction: column;
 
@@ -51,14 +127,13 @@ body::before{
 
     width: 300px;
 
-    /* position in the middle of parent */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.screen-test{
+.screen{
     height: 100px;
     background: transparent;
     color: white;
@@ -71,18 +146,14 @@ body::before{
     padding-right: 10px;
 }
 
-.panel-test{
+.calc-panel{
     display: flex;
     flex-wrap: wrap;
-    /* width: 100%; */
 }
 
 .btn{
-    width: 74px;
-    height: 74px;
-
-    /* border: none; */
-
+    width: 75px;
+    height: 75px;
     background: rgba(255, 255, 255, 0.05);
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.02);;
@@ -97,10 +168,16 @@ body::before{
 
 .btn.clear{
     width: 75%;
+
+    /* transition: 1s;
+    transition-delay: 1s; */
 }
+
 
 .btn.clear:hover{
     background: rgba(4, 255, 37, 0.6);
+    /* animation: glow 1s  ease-in-out; */
+
 }
 
 .btn.result:hover{
@@ -111,3 +188,16 @@ body::before{
     width: 50%;
 }
 
+/* @keyframes glow {
+
+    0%{
+        color: white;
+    }
+    50%{
+        color: transparent;
+    }
+    100%{
+        color: white;
+    }
+    
+} */

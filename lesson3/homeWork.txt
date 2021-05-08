@@ -1,0 +1,5 @@
+1. Move over js code and understand it 
+2. Add dot button function on click - add dot to the screen 
+3. Add new flag to detect if the button clicked is number  
+4. Add new flag to detect if the button clicked is operation  
+5. Add prevent eval function if the last clicked button is not a number  

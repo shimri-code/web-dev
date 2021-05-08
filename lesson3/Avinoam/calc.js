@@ -29,9 +29,11 @@ num_btns_arr.forEach((el) => {
     if (
       screen.innerText.localeCompare("\n") == 0 ||
       screen.innerText.localeCompare("This is my screen") == 0
-    )
+    ) {
       screen.innerText = el.innerText;
-    else screen.innerText += el.innerText;
+    } else {
+      screen.innerText += el.innerText;
+    }
   });
 });
 
